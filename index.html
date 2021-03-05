@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LINHA DO TEMPO 2</title>
+
+    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylelais.css" />
+    
+
+    <link rel="shortcut icon" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/jtline.js"></script>
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            var contentText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
+
+            // dataRoot : '/'
+            var myMappedObject = [
+                {
+                    "isSelected": "true",
+                    "taskTitle": "Criação do SISVAN",
+                    "taskSubTitle": " 1976 ",
+                    "assignDate": "16/01/1976",
+                    "taskShortDate": "1976",
+                    "taskDetails": "&times; Sistema de informação para vigilância nutricional direcionado para o combate à desnutrição infantil <br>\n&times; O projeto não logrou êxito, exceto iniciativas locais restritas."
+
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Regulamentação do SUS",
+                    "taskSubTitle": "1990",
+                    "assignDate": "28/02/1990",
+                    "taskShortDate": "1990",
+                    "taskDetails": "&times; Previsão de instituição do SISVAN (Lei 8.080/90).<br>\n &times; Diversas portarias do Ministério da Saúde neste mesmo ano estabeleceram comitês e grupos e grupos técnicos para implementação do SISVAN. "
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Programa Leite é Saúde",
+                    "taskSubTitle": "1993",
+                    "assignDate": "20/04/1993",
+                    "taskShortDate": "1993",
+                    "taskDetails": "&times; Plano de Combate à Fome e à Miséria.<br>\n &times; SISVAN era o critério para adesão municipal ao programa.<br>\n&times; A VAN realizava apenas a triagem para o programa, sem avançar enquanto sistema."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Programa de Incentivo ao Combate às Carências Nutricionais (ICCN)",
+                    "taskSubTitle": "1998",
+                    "assignDate": "20/05/1998",
+                    "taskShortDate": "1998",
+                    "taskDetails": "&times; A alimentação regular de dados constituía-se critério para adesão e permanência no programa. <br>\n&times; O fluxo mensal de informação envolvia os municípios e os estados. Estes consolidavam trimestralmente os relatórios para a instância federal."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Política Nacional de Alimentação e Nutrição PNAN",
+                    "taskSubTitle": "1999",
+                    "assignDate": "09/07/1999",
+                    "taskShortDate": "1999",
+                    "taskDetails": "&times; Portaria nº 710/99 do Ministério da Saúde aprova PNAN que prevê a instituição do SISVAN e dá outras providências. <br>\n &times; Ampliação do sistema e de suas atribuições como ferramenta para produção de indicadores que permitem o suporte e avaliação das informações referentes à alimentação e nutrição. "
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Informatização do SISVAN",
+                    "taskSubTitle": "2004",
+                    "assignDate": "30/08/2004",
+                    "taskShortDate": "2004",
+                    "taskDetails": " &times; Através do DATASUS e com a concepção da CGPAN/MS elaborou o projeto de informatização do SISVAN.<br>\n &times; Capacitação do pessoal relacionado para operar o sistema nos estados e municípios.    <br>\n    <br>\n"
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Criação do Sistema Nacional de Segurança Alimentar e Nutricional (SISAN)",
+                    "taskSubTitle": "2006",
+                    "assignDate": "15/09/2006",
+                    "taskShortDate": "2006",
+                    "taskDetails": "&times; O SISAN tem, dentre outras prerrogativas, a de assegurar o direito humano à alimentação adequada. <br>\n"
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Alimentação como direito social",
+                    "taskSubTitle": "2010",
+                    "assignDate": "15/04/2010",
+                    "taskShortDate": "2010",
+                    "taskDetails": "&times; Emenda Constitucional nº 64/2010 altera o artigo 6º da Constituição, incluindo a alimentação como direito social.  <br>\n "
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Política Nacional de Segurança Alimentar e Nutricional (PNSAN)",
+                    "taskSubTitle": "2010",
+                    "assignDate": "15/07/2006",
+                    "taskShortDate": "2010",
+                    "taskDetails": "&times; Decreto 7.272/2010.  <br>\n &times; Estabelece parâmetros para a elaboração do Plano Nacional de Segurança Alimentar e Nutricional."
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Política Nacional de Alimentação e Nutrição",
+                    "taskSubTitle": "2013",
+                    "assignDate": "10/12/2013",
+                    "taskShortDate": "2013",
+                    "taskDetails": "&times; Em atenção ao disposto na Portaria nº 2.715/2011, propõe a atualização da PNAM. <br>\n&times; Reforça o papel do SISVAN no diagnóstico da situação de saúde na área de alimentação e nutrição.     <br>\n    <br>\n"
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Pacto Nacional para Alimentação Saudável",
+                    "taskSubTitle": "2015",
+                    "assignDate": "19/01/2015",
+                    "taskShortDate": "2015",
+                    "taskDetails": "&times; Decreto 8.553/2015. <br>\n &times; Tem como propósito ampliar as condições de oferta, disponibilidade e consumo de alimentos saudáveis e combater o sobrepeso, a obesidade e as doenças decorrentes da má alimentação da população brasileira. "
+                },
+                {
+                    "isSelected": "",
+                    "taskTitle": "Extinção do CONSEA",
+                    "taskSubTitle": "2019",
+                    "assignDate": "03/03/2019",
+                    "taskShortDate": "2019",
+                    "taskDetails": "&times; Lei 13.844/2019. <br>\n&times; Reorganiza Executivo Federal, ministérios e demais estruturas de governo."
+                }
+            ];
+
+            var jtLine = $('.myjtline').jTLine({
+                callType: 'jsonObject',
+                structureObj: myMappedObject,
+                map: {
+                    "dataRoot": "/",
+                    "title": "taskTitle",
+                    "subTitle": "taskSubTitle",
+                    "dateValue": "assignDate",
+                    "pointCnt": "taskShortDate",
+                    "bodyCnt": "taskDetails"
+                },
+                distanceMode: 'fixDistance', // 'fixDistance' 'auto' 'predefinedDistance'
+                eventsMinDistance: 60,       // Consider It as Distance Unit "by Pixel"
+                fixDistanceValue: 2,         // if eventsMinDistance = 60 & fixDistanceValue= 2 then the value is: (60*2) = 120 px
+                firstPointMargin: 1          // First Point Margin from the left
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+   
+
+
+
+    <section class="accessibility-bar-wrapper">
+        <div class="container">
+          <div>
+            <a href="#conteudo" class="d-inline-block" accesskey="1" title="Link para ir ao conteúdo"><span
+                class="numero-acessibilidade">1</span> Ir para o conteúdo </a>
+            <a href="#footer" class="d-inline-block" accesskey="3" title="Ir para o rodapé"><span
+                class="numero-acessibilidade">2</span>Ir para o rodapé </a>
+          </div>
+          <div class="custom-control custom-switch" style="display: flex; align-items: baseline;">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Alto Contraste</label>
+          </div>
+        </div>
+      </section>
+    
+      <header class="header">
+        <div class="container">
+          <h1>INFORMÁTICA EM SAÚDE</h1>
+          <h1>SISTEMA DE VIGILÂNCIA ALIMENTAR E NUTRICIONAL <b>(SISVAN)</b> E PROGRAMA<b> BOLSA FAMÍLIA</b></h1>
+          <h1>LINHA DO TEMPO 2</h1>
+        </div>
+      </header>
+    
+    
+      <section id="conteudo" class="container">
+    
+    
+        <div aling="center"><h3> Principais marcos da Vigilância Alimentar e Nutricional (VAN) no Brasil </h3> </div>
+    
+           
+
+
+      <div class="myjtline">
+        
+        </div>
+    
+      </section>
+      <span class="line"></span>
+      <footer id="footer" class="container">
+        <img src="img/logo-lais.png" alt="LAIS">
+        <img src="img/logo-sedis.png" alt="SEDIS">
+        <img id="ufrn" src="img/ufrn.png" alt="UFRN">
+    
+    
+      </footer>
+    
+      <script src="js/dark-mode-switch.min.js"></script>
+
+    
+      
+
+
+    </div>
+    
+</body>
+
+</html>
